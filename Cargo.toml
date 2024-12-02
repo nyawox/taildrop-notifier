@@ -1,0 +1,13 @@
+[package]
+name = "taildrop-notifier"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+notify = "6.1.1"
+notify-rust = "4"
+dirs = "5.0"
+tempfile = "3.14.0"
+nix = { version = "0.29.0", features = ["fs", "user"] }
+tokio = { version = "1.41.1", features = ["full"] }
+clap = { version = "4.5.21", features = ["derive"] }
